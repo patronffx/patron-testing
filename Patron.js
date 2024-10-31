@@ -2829,7 +2829,7 @@ replynano(`Send/Reply to Images With Caption ${prefix + command} text1|text2`)
 break
 
 case 'patron': {
-     replynano('*EVERYONE SHALL KNOW PATRON!!!*')
+     replynano('*THIS WORLD SHALL KNOW PATRON!!!*')
 }
 break     
 
@@ -2851,7 +2851,7 @@ case 'update': {
     const fs = require('fs');
     fs.writeFileSync('./Patron.js', newFileContent, 'utf8');
 
-    reply("*𝐒𝐔𝐂𝐂𝐄𝐒𝐒𝐅𝐔𝐋𝐋𝐘 𝐔𝐏𝐃𝐀𝐓𝐄𝐃 𝐏𝐀𝐓𝐑𝐎𝐍 𝐌𝐃!*");
+    replynano("*𝐒𝐔𝐂𝐂𝐄𝐒𝐒𝐅𝐔𝐋𝐋𝐘 𝐔𝐏𝐃𝐀𝐓𝐄𝐃 𝐏𝐀𝐓𝐑𝐎𝐍 𝐌𝐃!*");
   } catch (error) {
     console.error("Error updating file:", error);
     reply("Failed to update file. Please check the console for errors.");
@@ -2877,6 +2877,7 @@ break
 case 'clear': {
 if (!DanzTheCreator) return reply(mess.only.owner)
 NanoBotz.chatModify({ delete: true, lastMessages: [{ key: m.key, messageTimestamp: m.messageTimestamp }] }, m.chat)
+	replynano('*Cleared*')
 }
 		
 break
@@ -2899,17 +2900,8 @@ replynano(`Done 🚹`)
 await sleep(3000)
 process.exit()
 break
-case 'totalfeature':
-        case 'totalfitur': 
-        case 'totalcmd': 
-        case 'totalcommand': 
-            replynano(`ᴡᴀɢᴡᴀɴ ʙʀᴜʜ ${pushname}
-so ${botname} has total features ${nanototalpitur()}
-help support and donate so that the features are available 
-there's more... thank you.🚹🚹`)
-        break
-case "patron": case "owner": {
-NanoBotz.sendContact2(m.chat, ['2348133729715'], "Patron Md dev", m)
+case "owner": {
+NanoBotz.sendContact2(m.chat, ['2348133729715'], "ᴘᴀᴛʀᴏɴ ᴍᴅ ᴅᴇᴠ", m)
 }
 break
   case 'menu': {
@@ -2932,29 +2924,28 @@ Welcome to *${botname}*, Im at your service my liege!
 │
 ├─ ㊕ *𝗕𝗼𝘁 𝗡𝗮𝗺𝗲*: ${botname}
 ├─ ㊕ *𝗥𝘂𝗻𝘁𝗶𝗺𝗲*: ${runtime(process.uptime())}
-├─ ㊕ *𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿*: ${ownername}
 └─ ㊕ *𝗩𝗲𝗿𝘀𝗶𝗼𝗻*: 1.0
 │
 └─ 🚹 𝗧𝗵𝗮𝗻𝗸 𝘆𝗼𝘂 𝗳𝗼𝗿 𝘂𝘀𝗶𝗻𝗴 *${botname}*! 🌟
-chooose a menu Category below 👇 
-🚹 Allmenu
-🚹 Nsfwmenu
-🚹 domainmenu
-🚹 gamemenu
-🚹 downloadmenu
-🚹 cpanelmenu
-🚹 funmenu
-🚹 Aimenu
-🚹 Groupmenu
-🚹 Ownermenu
-🚹 Ephoto360menu
-🚹 Animemenu
-🚹 randomphotomenu
-🚹 stalkermenu
-🚹 bugmenu
-🚹 othermenu
-🚹 Rpgmenu
-🚹 anonymousmenu`
+*ᴄʜᴏᴏᴏꜱᴇ ᴀ ᴍᴇɴᴜ ᴄᴀᴛᴇɢᴏʀʏ ʙᴇʟᴏᴡ* 👇 
+🚹 *ᴀʟʟᴍᴇɴᴜ*
+🚹 *ɴꜱꜰᴡᴍᴇɴᴜ*
+🚹 *ᴅᴏᴍᴀɪɴᴍᴇɴᴜ*
+🚹 *ɢᴀᴍᴇᴍᴇɴᴜ*
+🚹 *ᴅᴏᴡɴʟᴏᴀᴅᴍᴇɴᴜ*
+🚹 *ᴄᴘᴀɴᴇʟᴍᴇɴᴜ*
+🚹 *ꜰᴜɴᴍᴇɴᴜ*
+🚹 *ᴀɪᴍᴇɴᴜ*
+🚹 *ɢʀᴏᴜᴘᴍᴇɴᴜ*
+🚹 *ᴏᴡɴᴇʀᴍᴇɴᴜ*
+🚹 *ᴇᴘʜᴏᴛᴏ360ᴍᴇɴᴜ*
+🚹 *ᴀɴɪᴍᴇᴍᴇɴᴜ*
+🚹 *ʀᴀɴᴅᴏᴍᴘʜᴏᴛᴏᴍᴇɴᴜ*
+🚹 *ꜱᴛᴀʟᴋᴇʀᴍᴇɴᴜ*
+🚹 *ʙᴜɢᴍᴇɴᴜ*
+🚹 *ᴏᴛʜᴇʀᴍᴇɴᴜ*
+🚹 *ʀᴘɢᴍᴇɴᴜ*
+🚹 *ᴀɴᴏɴʏᴍᴏᴜꜱᴍᴇɴᴜ*`
 await NanoBotz.sendMessage(m.chat, { image: thumb, caption: nano_sad, contextInfo: { mentionedJid: [m.sender], forwardingScore: 9999, isForwarded: true }},{ quoted: null })
 {
 await sleep(100)
@@ -3225,15 +3216,6 @@ NanoBotz.sendMessage(m.chat, { react: { text: '🚹', key: m.key }})
            break
 case 'animemenu': {
   let nano_sad = `${animemenu(prefix, hituet)}`
-await NanoBotz.sendMessage(m.chat, { image: thumb, caption: nano_sad, contextInfo: { mentionedJid: [m.sender], forwardingScore: 9999, isForwarded: true }},{ quoted: null })
-{
-await sleep(100)
-NanoBotz.sendMessage(m.chat, { react: { text: '🚹', key: m.key }})
-}
-           }
-           break
-case 'primbonmenu': {
-  let nano_sad = `${primbonmenu(prefix, hituet)}`
 await NanoBotz.sendMessage(m.chat, { image: thumb, caption: nano_sad, contextInfo: { mentionedJid: [m.sender], forwardingScore: 9999, isForwarded: true }},{ quoted: null })
 {
 await sleep(100)
@@ -3570,7 +3552,18 @@ case 'script':
 case 'channel':
 case 'repo': {
 const text12 = `*Hi @${sender.split("@")[0]} 👋*
-`
+𝐏𝐀𝐓𝐑𝐎𝐍-𝐌𝐃 𝐑𝐄𝐀𝐋𝐄𝐀𝐒𝐄𝐃 𝐎𝐍 𝐆𝐈𝐓𝐇𝐔𝐁
+
+*REPO LINK:* https://github.com/Itzpatron/PATRON-MD
+
+*HOW TO DEPLOY ON PANEL:* https://youtu.be/ygIOzvZS0z0?si=HBG2WzpWO-2cBBkJ
+
+*CHANNEL LINK:* https://whatsapp.com/channel/0029Val0s0rIt5rsIDPCoD2q
+
+ *READ THE README TO SEE MORE DEPLOYMENT OPTIONS*
+
+ *DON'T FORGET TO STAR AND FORK REPO*
+*NAMASTE 🚹*`
 NanoBotz.sendMessage(m.chat, {
 text: text12,
 contextInfo: {
@@ -3578,7 +3571,7 @@ externalAdReply: {
 showAdAttribution: true,
 title: ownername,
 body: 'PATRON',
-"thumbnailUrl": 'https://files.catbox.moe/gc868n.jpg',
+"thumbnailUrl": 'https://i.imgur.com/5wsWcjp.jpeg',
 sourceUrl: wagc,
 mediaType: 1,
 renderLargerThumbnail: true
