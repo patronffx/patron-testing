@@ -1,16 +1,21 @@
+
 FROM node:lts-buster
 
 RUN apt-get update && \
-    apt-get install -y ffmpeg webp git && \
-    apt-get upgrade -y && \
-    rm -rf /var/lib/apt/lists/*
+  apt-get install -y \
+  ffmpeg \
+  imagemagick \
+  webp && \
+  apt-get upgrade -y && \
+  rm -rf /var/lib/apt/lists/*
 
-RUN git clone https://github.com/patronffx/patron-testing anya-v2
+COPY package.json .
 
-WORKDIR /anya-v2
+RUN  git clone https://github.com/patronffx/patron-testing  /root/Flash_BOt
+WORKDIR /root/Flash_Bot/
 
-RUN yarn install --production
+COPY . .
 
-RUN yarn global add pm2
+EXPOSE 3000
 
 CMD ["node", "index.js", "--server"]
