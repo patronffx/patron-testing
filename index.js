@@ -54,6 +54,12 @@ settings: {},
 ...(global.db || {})
 }
 const pairingCode = !!phoneNumber || process.argv.includes("--pairing-code")
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => res.send('Bot is running!'));
+
+app.listen(3000, () => console.log('Server is live!'));
 
 const useMobile = process.argv.includes("--mobile")
 const owner = JSON.parse(fs.readFileSync('./database/owner.json'))
