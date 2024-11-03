@@ -1,20 +1,16 @@
-
 FROM node:lts-buster
 
 RUN apt-get update && \
-  apt-get install -y \
-  ffmpeg \
-  imagemagick \
-  webp && \
-  apt-get upgrade -y && \
-  rm -rf /var/lib/apt/lists/*
+    apt-get install -y ffmpeg webp git && \
+    apt-get upgrade -y && \
+    rm -rf /var/lib/apt/lists/*
 
-COPY package.json .
+RUN git clone https://github.com/patronffx/patron-testing anya-v2
 
-RUN npm install && npm install qrcode-terminal
+WORKDIR /anya-v2
 
-COPY . .
+RUN yarn install --production
 
-EXPOSE 3000
+RUN yarn global add pm2
 
 CMD ["node", "index.js", "--server"]
