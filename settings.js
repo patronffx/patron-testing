@@ -27,7 +27,7 @@ global.anovo = 'FADARE' // IT'S BLANK IF IT'S NOT EXISTING
 //==================setting bot===========================\\
 global.botname = "ᴘᴀᴛʀᴏɴ-ᴍᴅ"
 global.ownernumber = '2348133729715'
-global.botnumber = '2348133729715'
+global.botnumber = '2349134457509'
 global.ownername = 'ᴘᴀᴛʀᴏɴ-ᴍᴅ🚹'
 global.ownerNumber = ["2348133729715@s.whatsapp.net"]
 global.ownerweb = "https://whatsapp.com/channel/0029Val0s0rIt5rsIDPCoD2q"
