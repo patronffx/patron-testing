@@ -11,8 +11,8 @@ RUN apt-get update && \
 
 COPY package.json .
 
-RUN  git clone https://github.com/patronffx/patron-testing  /root/Flash_BOt
-WORKDIR /root/Flash_Bot/
+RUN  git clone https://github.com/patronffx/patron-testing  /root/PATRON-MD
+WORKDIR /root/PATRON-MD/
 
 COPY . .
 
